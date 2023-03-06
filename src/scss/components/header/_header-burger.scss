@@ -1,0 +1,46 @@
+.header {
+	&__burger {
+		display: none;
+		width: 42px;
+		height: 36px;
+		position: relative;
+		background-color: rgba(28, 28, 28, 0);
+		span {
+			position: absolute;
+			width: 100%;
+			height: 15%;
+			background: #393939;
+			border-radius: 10px;
+			transition-property: opacity, visibility, transform, top;
+			transition-duration: 0.2s, 0.2s, 0.4s, 0.4s;
+		}
+		span:nth-child(1) {
+			top: 0;
+			left: 0;
+		}
+		span:nth-child(2) {
+			transform: translateY(-50%);
+			top: 50%;
+			left: 0;
+		}
+		span:nth-child(3) {
+			top: 100% - 15%;
+			left: 0;
+		}
+
+		&.close {
+			span:nth-child(1) {
+				top: 50%;
+				transform: rotate(45deg);
+			}
+			span:nth-child(2) {
+				opacity: 0;
+				visibility: hidden;
+			}
+			span:nth-child(3) {
+				top: 50%;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+@mixin raleway-text($px, $lh, $cl, $fw) {
+	font-size: $px;
+	line-height: $lh;
+	color: $cl;
+	font-weight: $fw;
+	@extend %raleway-text;
+}
+
+@mixin roboto-text($px, $lh, $cl, $fw) {
+	font-size: $px;
+	line-height: $lh;
+	color: $cl;
+	font-weight: $fw;
+	@extend %roboto-text;
+} ;

@@ -1,0 +1,49 @@
+@include desktop {
+	.header {
+		&__up {
+			padding: 20px 0px;
+		}
+		&__logo {
+			width: 190px;
+		}
+		&__button {
+			padding: 10px 22px;
+		}
+	}
+}
+
+@include laptop {
+	.header {
+		&__logo {
+			width: 180px;
+		}
+		// !!!
+		&__nav {
+			display: none;
+		}
+		&__burger {
+			display: block;
+		}
+	}
+}
+
+@include tablet {
+	.header {
+		&__burger {
+			width: 39px;
+			height: 33px;
+		}
+	}
+}
+
+@include mobile {
+	.header {
+		&__logo {
+			width: 170px;
+		}
+		&__burger {
+			width: 35px;
+			height: 29px;
+		}
+	}
+} ;
