@@ -1,0 +1,37 @@
+.modal {
+	transition-property: opacity, visibility;
+	transition-duration: 0.5s;
+	&__bg {
+		transition-property: opacity;
+		transition-duration: 0.4s;
+		opacity: 0;
+	}
+
+	&__body {
+		transition-property: opacity, transform;
+		transition-duration: 0.5s;
+		transform: translateY(15%);
+		opacity: 0;
+	}
+}
+
+.modal.open {
+	visibility: visible;
+	opacity: 1;
+	.modal__body {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	.modal__bg {
+		opacity: 1;
+	}
+}
+
+.modal.closing {
+	.modal__body {
+		opacity: 0;
+	}
+	.modal__bg {
+		opacity: 0;
+	}
+}

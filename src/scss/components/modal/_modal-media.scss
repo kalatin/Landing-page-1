@@ -1,0 +1,17 @@
+@include laptop {
+	.modal {
+		&__body {
+			row-gap: 12px;
+			padding: 15px 20px;
+		}
+		form {
+			row-gap: 20px;
+			input,
+			textarea,
+			button {
+				font-size: 17px;
+				padding: 8px 5px;
+			}
+		}
+	}
+}

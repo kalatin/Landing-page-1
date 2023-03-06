@@ -23,7 +23,7 @@
 							<li><a href="#">Clients</a></li>
 							<li><a href="#">Features</a></li>
 							<li><a href="#">Download App</a></li>
-							<button class="header__button" type="button">Contact Us</button>
+							<button class="header__button" type="button" data-modal-link="modal">Contact Us</button>
 						</ul>
 					</nav>
 					<button class="header__burger">
@@ -35,6 +35,22 @@
 			</div>
 		</header>
 
+		<div class="modal">
+			<div class="modal__bg">
+				<div class="modal__body">
+					<button type="button" class="modal__button-close">
+						<span></span>
+						<span></span>
+					</button>
+					<form>
+						<input type="text" placeholder="enter your name" />
+						<input type="email" placeholder="enter your email" />
+						<textarea placeholder="enter your message" rows="4"></textarea>
+						<button type="submit">send</button>
+					</form>
+				</div>
+			</div>
+		</div>
 		<script src="js/script.js"></script>
 	</body>
 </html>
