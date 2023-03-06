@@ -13,7 +13,12 @@ document.body.addEventListener('click', e => {
 
 		function openModal() {
 			modal.classList.add('open');
-			scrollController.disabledScroll();
+			if (
+				!document.querySelector('.header__nav').matches('.open') &&
+				!document.querySelector('.header__burger').matches('.close')
+			) {
+				scrollController.disabledScroll();
+			}
 			setTimeout(() => (isModalOpen = true), timeModalBlock);
 
 			modal.addEventListener('click', e => {
@@ -30,7 +35,13 @@ document.body.addEventListener('click', e => {
 
 		function closeModal() {
 			modal.classList.remove('open');
-			scrollController.enabledScroll();
+			if (
+				!document.querySelector('.header__nav').matches('.open') &&
+				!document.querySelector('.header__burger').matches('.close')
+			) {
+				scrollController.enabledScroll();
+			}
+
 			setTimeout(() => (isModalOpen = false), timeModalBlock);
 		}
 	}
