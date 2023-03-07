@@ -1,3 +1,20 @@
 .header {
-	background: url('../img/header-bg.jpg');
+	overflow: hidden;
+	background: url('../img/header-bg.jpg') 50% 50% no-repeat;
+	background-size: cover;
+	position: relative;
+	&__circle {
+		position: absolute;
+		width: 69%;
+		height: 1075px;
+		left: -320px;
+		top: calc(50% - 982px / 2 + 0px);
+		background: white;
+		border-radius: 50%;
+	}
+	&__container {
+		* {
+			z-index: 3;
+		}
+	}
 }

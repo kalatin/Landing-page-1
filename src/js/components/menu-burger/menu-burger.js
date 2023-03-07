@@ -18,6 +18,7 @@ burger.addEventListener('click', e => {
 	window.addEventListener('resize', e => {
 		if (document.body.clientWidth > 992) {
 			closeMenu();
+			scrollController.enabledScroll();
 		}
 	});
 });

@@ -33,7 +33,7 @@
 	}
 	&__button {
 		@include raleway-text(16px, 150%, white, 700);
-		background-color: #c4730a;
+		background-color: $accent-color;
 		padding: 12px 24px;
 		margin-left: 32px;
 		border: 1px solid #c4730a;
@@ -41,9 +41,8 @@
 		transition-duration: 0.2s;
 		transition-property: background-color, border, color;
 		&:hover {
-			border: 1px solid #e18813;
-			background-color: #e18813;
-			color: rgb(241, 241, 241);
+			border: 1px solid #d27101;
+			background-color: #d27101;
 		}
 	}
 }

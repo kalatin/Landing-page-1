@@ -1,0 +1,54 @@
+.banner {
+	background: #f3f3f3;
+	&__container {
+		padding-top: 24px;
+		padding-bottom: 24px;
+		display: grid;
+		grid-template-columns: repeat(9, auto);
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__item {
+		@include raleway-text(24px, 140%, #5e5e5e, 700);
+	}
+
+	&__circle {
+		width: 11.5px;
+		height: 11.5px;
+		border-radius: 50%;
+		background: #5e5e5e;
+	}
+}
+
+@include desktop {
+	.banner {
+		&__container {
+			grid-template-columns: repeat(5, auto);
+			max-width: 800px;
+			grid-row-gap: 15px;
+			div:nth-child(6) {
+				opacity: 0;
+			}
+		}
+		&__circle {
+			justify-self: center;
+		}
+		&__item {
+			font-size: 19px;
+		}
+	}
+}
+
+@include tablet {
+	.banner {
+		&__container {
+			grid-template-columns: repeat(3, auto);
+			grid-row-gap: 10px;
+			max-width: 500px;
+			div:nth-child(4) {
+				opacity: 0;
+			}
+		}
+	}
+}
