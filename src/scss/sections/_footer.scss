@@ -1,0 +1,99 @@
+.footer {
+	background: $base-color-text;
+	&__container {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	&__up {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		user-select: none;
+		pointer-events: none;
+	}
+
+	&__media {
+		display: flex;
+		column-gap: 16px;
+		align-items: center;
+	}
+
+	&__list {
+		li {
+			a {
+				@include raleway-text(16px, 150%, #ffffff, 700);
+			}
+		}
+	}
+
+	&__down {
+		margin-top: 80px;
+		border-top: 1px solid #5e5e5e;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__down-list {
+		margin-top: 32px;
+		display: flex;
+		li {
+			a {
+				@include raleway-text(14px, 150%, #f3f3f3, 400);
+			}
+		}
+		> li + li {
+			margin-left: 24px;
+		}
+	}
+
+	&__copyright {
+		margin-top: 32px;
+		@include raleway-text(14px, 150%, #f3f3f3, 400);
+	}
+}
+
+@include laptop {
+	.footer {
+		&__down {
+		}
+		&__copyright,
+		&__down-list {
+			justify-content: center;
+			margin: 20px auto;
+			flex-basis: 100%;
+			text-align: center;
+		}
+	}
+}
+
+@include tablet {
+	.footer {
+		&__up {
+			flex-wrap: wrap;
+			row-gap: 36px;
+			> * {
+				text-align: center;
+				flex-basis: 100%;
+				margin: 0 auto;
+			}
+		}
+		&__list {
+			margin: 0 auto;
+		}
+		&__logo {
+			max-width: 286px;
+		}
+		&__down {
+			margin-top: 55px;
+		}
+		&__media {
+			justify-content: center;
+		}
+	}
+}

@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.contact__item-address, .contact__item-title, .contact__head h2, .contact__head p, .app__text, .app__title, .cta__button, .cta__text, .cta__title, .testimonial__item blockquote, .features__item-text, .features__item-title, .features__heading, .features__title, .banner__item, .clients__title, .modal form button, .modal form input,
+.footer__copyright, .footer__down-list li a, .footer__list li a, .contact__item-address, .contact__item-title, .contact__head h2, .contact__head p, .app__text, .app__title, .cta__button, .cta__text, .cta__title, .testimonial__item blockquote, .features__item-text, .features__item-title, .features__heading, .features__title, .banner__item, .clients__title, .modal form button, .modal form input,
 .modal form textarea, .header__button-2, .header__text, .header__title, .header__button, .header__nav ul li a {
   font-family: "Raleway";
   font-style: normal;
@@ -1126,5 +1126,95 @@ h1, h2, h3, h4, h5, h6 {
   }
   .contact__block {
     margin-top: 36px;
+  }
+}
+.footer {
+  background: #4b4b4b;
+}
+.footer__container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.footer__up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+.footer__media {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  align-items: center;
+}
+.footer__list li a {
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+  font-weight: 700;
+}
+.footer__down {
+  margin-top: 80px;
+  border-top: 1px solid #5e5e5e;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__down-list {
+  margin-top: 32px;
+  display: flex;
+}
+.footer__down-list li a {
+  font-size: 14px;
+  line-height: 150%;
+  color: #f3f3f3;
+  font-weight: 400;
+}
+.footer__down-list > li + li {
+  margin-left: 24px;
+}
+.footer__copyright {
+  margin-top: 32px;
+  font-size: 14px;
+  line-height: 150%;
+  color: #f3f3f3;
+  font-weight: 400;
+}
+
+@media (max-width: 992px) {
+  .footer__copyright, .footer__down-list {
+    justify-content: center;
+    margin: 20px auto;
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .footer__up {
+    flex-wrap: wrap;
+    row-gap: 36px;
+  }
+  .footer__up > * {
+    text-align: center;
+    flex-basis: 100%;
+    margin: 0 auto;
+  }
+  .footer__list {
+    margin: 0 auto;
+  }
+  .footer__logo {
+    max-width: 286px;
+  }
+  .footer__down {
+    margin-top: 55px;
+  }
+  .footer__media {
+    justify-content: center;
   }
 }
