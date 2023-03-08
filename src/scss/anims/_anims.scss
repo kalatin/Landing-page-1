@@ -130,6 +130,11 @@
 }
 
 .cta {
+	background-size: 150% 180%;
+	transition-property: background-size;
+	transition-duration: 2.5s;
+}
+.cta.anim-on {
 	background-size: 130% 150%;
 	transition-property: background-size;
 	transition-duration: 2.5s;
