@@ -3,12 +3,27 @@
 	background: url('../img/header-bg.jpg') 50% 50% no-repeat;
 	background-size: cover;
 	position: relative;
+	// &__circle {
+	// 	position: absolute;
+	// 	width: 69%;
+	// 	height: 1174px;
+	// 	left: -320px;
+	// 	top: calc(50% - 982px / 2 + 0px);
+	// 	background: white;
+	// 	border-radius: 50%;
+	// }
 	&__circle {
 		position: absolute;
-		width: 69%;
-		height: 1075px;
-		left: -320px;
-		top: calc(50% - 982px / 2 + 0px);
+		width: (100% /1.5);
+		height: 200%;
+		left: -300px;
+		box-shadow: 64.8409px 4.54508px 402px rgba(158, 158, 158, 0.16),
+			42.0265px 2.94588px 235.431px rgba(158, 158, 158, 0.121481),
+			24.9758px 1.7507px 128.044px rgba(158, 158, 158, 0.0971852),
+			12.9682px 0.909015px 65.325px rgba(158, 158, 158, 0.08),
+			5.28333px 0.37034px 32.7556px rgba(158, 158, 158, 0.0628148),
+			1.20076px 0.0841681px 15.8194px rgba(158, 158, 158, 0.0385185);
+		top: -50%;
 		background: white;
 		border-radius: 50%;
 	}

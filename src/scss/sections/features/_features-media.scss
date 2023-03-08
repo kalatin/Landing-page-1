@@ -1,27 +1,40 @@
 @include desktop {
-	.features-1 {
+	.features {
 		&__container {
-			grid-template-columns: repeat(1, 1fr);
-			grid-row-gap: 20px;
 			padding-top: 100px;
 			padding-bottom: 50px;
 		}
-		img {
-			max-width: 70%;
-			height: 600px;
+		&__image {
+			max-width: 100%;
+			height: 550px;
+		}
+		&__heading {
+			font-size: 40px;
 		}
 		&__block {
 			row-gap: 20px;
+		}
+		&__item-title {
+			margin: 13px 0;
+		}
+	}
+	.features-2 .features {
+		&__image {
+			justify-self: end;
 		}
 	}
 }
 
 @include laptop {
-	.features-1 {
+	.features {
 		&__container {
+			grid-template-columns: repeat(1, 1fr);
+			grid-row-gap: 55px;
 			text-align: center;
 			padding-top: 70px;
 			padding-bottom: 40px;
+			padding-left: 22px;
+			padding-right: 22px;
 		}
 		&__item-up {
 			margin: 0 auto;
@@ -33,22 +46,23 @@
 		h2 {
 			font-size: 38px;
 		}
-		img {
+		&__image {
 			margin: 0 auto;
-			max-width: 85%;
+			max-width: 100%;
+			max-height: 400px;
+		}
+		&__block {
+			row-gap: 25px;
 		}
 	}
 }
 
 @include tablet {
-	.features-1 {
+	.features {
 		&__container {
 			padding-top: 40px;
 		}
-		img {
-			max-width: 96%;
-			max-height: 450px;
-		}
+
 		h2 {
 			font-size: 33px;
 		}
@@ -66,12 +80,9 @@
 }
 
 @include mobile {
-	.features-1 {
-		&__container {
-		}
-		img {
-			max-width: 100%;
-			height: 350px;
+	.features {
+		&__image {
+			height: 315px;
 		}
 	}
 }

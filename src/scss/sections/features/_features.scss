@@ -1,4 +1,4 @@
-.features-1 {
+.features {
 	&__container {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -8,7 +8,7 @@
 		padding-bottom: 64px;
 	}
 
-	img {
+	&__image {
 		height: 640px;
 		max-width: 100%;
 		border-radius: 4px 4px 1000px 4px;
@@ -24,13 +24,13 @@
 		@include raleway-text(24px, 150%, $accent-color, 700);
 	}
 
-	h2 {
+	&__heading {
 		@include raleway-text(48px, 120%, $base-color-text, 700);
 	}
 
 	&__items {
 		display: flex;
-		column-gap: 24px;
+		column-gap: 34px;
 	}
 
 	&__item {
@@ -57,5 +57,17 @@
 
 	&__item-text {
 		@include raleway-text(16px, 150%, $base-color-text, 400);
+	}
+}
+
+.features-2 .features {
+	&__container {
+		padding-top: 60px;
+	}
+	&__block {
+		order: -1;
+	}
+	&__image {
+		border-radius: 1000px 4px 4px 4px;
 	}
 }

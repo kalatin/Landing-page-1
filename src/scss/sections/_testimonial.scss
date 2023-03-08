@@ -1,0 +1,58 @@
+.testimonial {
+	&__content {
+		padding: 112px 0;
+		display: flex;
+		column-gap: 48px;
+	}
+	&__item {
+		display: inline-flex;
+		flex-direction: column;
+		text-align: center;
+		flex: 1 1 auto;
+		img {
+			margin: 0 auto;
+		}
+		cite {
+			@include roboto-text(16px, 150%, black, 600);
+			margin-top: 16px;
+		}
+		h4 {
+			@include roboto-text(16px, 150%, black, 400);
+			margin-bottom: 24px;
+		}
+		blockquote {
+			@include raleway-text(20px, 150%, black, 400);
+		}
+	}
+}
+
+@include desktop {
+	.testimonial {
+		&__content {
+			padding: 75px 0;
+			column-gap: 30px;
+		}
+	}
+}
+
+@include laptop {
+	.testimonial {
+		&__content {
+			padding: 55px 0;
+			flex-direction: column;
+			row-gap: 48px;
+		}
+		&__item {
+			margin: 0 auto;
+			max-width: 700px;
+		}
+	}
+}
+
+@include tablet {
+	.testimonial {
+		&__content {
+			padding: 38px 0;
+		}
+	}
+}

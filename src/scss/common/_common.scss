@@ -3,3 +3,9 @@
 	margin: 0 auto;
 	padding: 0 12px;
 }
+
+@include mobile {
+	.container {
+		padding: 0 20px;
+	}
+}

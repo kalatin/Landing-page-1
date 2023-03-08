@@ -1,0 +1,54 @@
+.app {
+	background: $accent-color;
+	&__container {
+		padding-top: 64px;
+		padding-bottom: 64px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+		row-gap: 16px;
+		max-width: 600px;
+	}
+
+	&__title {
+		@include raleway-text(32px, 120%, #fcf6f0, 700);
+	}
+
+	&__text {
+		@include raleway-text(20px, 150%, #fcf6f0, 400);
+	}
+
+	&__buttons {
+		display: flex;
+		column-gap: 16px;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		row-gap: 16px;
+		justify-content: center;
+		a {
+			display: inline-block;
+			border-radius: 4px;
+		}
+	}
+}
+
+@include desktop {
+	.app {
+		&__container {
+			flex-direction: column;
+			row-gap: 36px;
+			text-align: center;
+		}
+	}
+}
+
+// @include tablet [
+// 	.app {
+
+// 	}
+// ]
