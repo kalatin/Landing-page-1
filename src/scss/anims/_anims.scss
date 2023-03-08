@@ -1,0 +1,225 @@
+.anim-item {
+}
+
+.anim-on {
+}
+
+.header {
+	&__logo {
+		@extend %anim-from-left;
+	}
+	&__logo.anim-on {
+		@extend %anim-off;
+	}
+	&__content {
+		@extend %anim-from-left;
+		@include laptop {
+			transform: translate(0, 50%);
+		}
+	}
+	&__content.anim-on {
+		@extend %anim-off;
+	}
+	&__circle {
+		transform: translate(-30%, 0);
+		transition-property: transform, opacity;
+		transition-duration: 0.8s, 0.8s;
+		opacity: 0;
+	}
+	&__circle.anim-on {
+		@extend %anim-off;
+	}
+	&__nav {
+		@extend %anim-from-right;
+	}
+	&__nav.anim-on {
+		@extend %anim-off;
+	}
+	&__burger {
+		@extend %anim-from-right;
+	}
+	&__burger.anim-on {
+		@extend %anim-off;
+	}
+}
+
+.clients {
+	&__title {
+		@extend %anim-from-top;
+	}
+	&__title.anim-on {
+		@extend %anim-off;
+	}
+	&__container {
+		img {
+			@extend %anim-transparency;
+		}
+		img.anim-on {
+			@extend %anim-off;
+		}
+	}
+}
+
+.features-1 .features {
+	overflow: hidden;
+	&__container {
+		img {
+			@extend %anim-from-left;
+		}
+		img.anim-on {
+			@extend %anim-off;
+		}
+		.features__block {
+			@extend %anim-from-right;
+		}
+		.features__block.anim-on {
+			@extend %anim-off;
+		}
+	}
+}
+
+.features-2 .features {
+	&__container {
+		img {
+			@extend %anim-from-right;
+		}
+		img.anim-on {
+			@extend %anim-off;
+		}
+		.features__block {
+			@extend %anim-from-left;
+		}
+		.features__block.anim-on {
+			@extend %anim-off;
+		}
+	}
+}
+
+.testimonial {
+	overflow: hidden;
+	&__content {
+	}
+	&__item:nth-child(1) {
+		@extend %anim-from-left;
+	}
+	&__item:nth-child(1).anim-on {
+		@extend %anim-off;
+	}
+	&__item:nth-child(2) {
+		@extend %anim-from-bottom;
+	}
+	&__item:nth-child(2).anim-on {
+		@extend %anim-off;
+	}
+	&__item:nth-child(3) {
+		@extend %anim-from-right;
+	}
+	&__item:nth-child(3).anim-on {
+		@extend %anim-off;
+	}
+}
+
+@media (min-width: 2150px) {
+	.cta {
+		background-size: 130% 190%;
+		background-position: 50% 15%;
+	}
+	.cta.anim-on {
+		background-size: 100% 130%;
+	}
+}
+
+.cta {
+	background-size: 130% 150%;
+	transition-property: background-size;
+	transition-duration: 2.5s;
+}
+
+@include big-desktop {
+	.cta {
+		background-size: 190% 160%;
+		background-position: 50% 0%;
+		&__block {
+			padding-top: 108px;
+			padding-bottom: 430px;
+		}
+		&.anim-on {
+			background-size: 140% 120%;
+		}
+	}
+}
+
+@include desktop {
+	.cta {
+		background-size: auto 133%;
+		background-position: 50% -5%;
+		&__block {
+			padding-top: 118px;
+			padding-bottom: 390px;
+		}
+		&.anim-on {
+			background-size: auto 133%;
+		}
+	}
+}
+
+@include laptop {
+	.cta {
+		background-size: auto 133%;
+		background-position: 50% -5%;
+		&__title {
+			font-size: 32px;
+		}
+		&__block {
+			padding-top: 80px;
+			padding-bottom: 333px;
+		}
+	}
+}
+
+@include tablet {
+	.cta {
+		background-size: auto 133%;
+		background-position: 50% -5%;
+		&__title {
+			font-size: 40px;
+		}
+		&__block {
+			padding-top: 100px;
+			padding-bottom: 370px;
+		}
+	}
+}
+
+@include mobile {
+	.cta {
+		&__block {
+			padding-top: 48px;
+			padding-bottom: 283px;
+		}
+	}
+}
+
+.cta {
+	&__block {
+		@extend %anim-from-top;
+	}
+	&__block.anim-on {
+		@extend %anim-off;
+	}
+}
+
+.app {
+	&__block {
+		@extend %anim-from-left;
+	}
+	&__block.anim-on {
+		@extend %anim-off;
+	}
+	&__buttons {
+		@extend %anim-from-right;
+	}
+	&__buttons.anim-on {
+		@extend %anim-off;
+	}
+}

@@ -40,6 +40,3 @@ function topOfMenu() {
 	let block = document.querySelector('.header__up');
 	nav.style.top = `${block.clientHeight + block.getBoundingClientRect().y}px`;
 }
-setInterval(() => {
-	console.log(isOpen);
-}, 500);

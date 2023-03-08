@@ -27,12 +27,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-	}
-
-	&__item {
-	}
-
-	&__item-logo {
+		grid-row-gap: 40px;
 	}
 
 	&__item-title {
@@ -43,11 +38,6 @@
 	&__item-address {
 		@include raleway-text(15px, 150%, $base-color-text, 400);
 	}
-
-	&__map {
-	}
-}
-.container {
 }
 
 @include big-desktop {
@@ -77,7 +67,6 @@
 @include laptop {
 	.contact {
 		&__block {
-			grid-row-gap: 65px;
 			grid-template-columns: repeat(1, 100%);
 			justify-content: center;
 		}
@@ -90,6 +79,7 @@
 		&__map {
 			padding: 0 20px;
 			iframe {
+				margin-top: 65px;
 				width: 100%;
 				height: 500px;
 			}

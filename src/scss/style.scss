@@ -1,4 +1,11 @@
 @import './common';
 @import './components/header';
-@import './components/modal';
 @import './sections/index';
+@import './components/modal';
+@import './anims/anims';
+
+main {
+	section {
+		overflow: hidden;
+	}
+}

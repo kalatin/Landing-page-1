@@ -2,7 +2,7 @@
 	overflow: hidden;
 	background-image: url('../img/CTA-Section.jpg');
 	background-repeat: no-repeat;
-	background-size: 100% 130%;
+
 	background-position: 50% 0%;
 	&__block {
 		margin: 0 auto;
@@ -30,71 +30,5 @@
 		margin: 0 auto;
 		padding: 12px 24px;
 		border-radius: 4px;
-	}
-}
-
-@media (min-width: 2150px) {
-	.cta {
-		background-size: 100% 160%;
-		background-position: 50% 15%;
-	}
-}
-
-@include big-desktop {
-	.cta {
-		background-size: 150% 130%;
-		background-position: 50% 0%;
-		&__block {
-			padding-top: 108px;
-			padding-bottom: 430px;
-		}
-	}
-}
-
-@include desktop {
-	.cta {
-		background-size: auto 133%;
-		background-position: 50% -5%;
-		&__block {
-			padding-top: 118px;
-			padding-bottom: 390px;
-		}
-	}
-}
-
-@include laptop {
-	.cta {
-		background-size: auto 133%;
-		background-position: 50% -5%;
-		&__title {
-			font-size: 32px;
-		}
-		&__block {
-			padding-top: 80px;
-			padding-bottom: 333px;
-		}
-	}
-}
-
-@include tablet {
-	.cta {
-		background-size: auto 133%;
-		background-position: 50% -5%;
-		&__title {
-			font-size: 40px;
-		}
-		&__block {
-			padding-top: 100px;
-			padding-bottom: 370px;
-		}
-	}
-}
-
-@include mobile {
-	.cta {
-		&__block {
-			padding-top: 48px;
-			padding-bottom: 283px;
-		}
 	}
 }

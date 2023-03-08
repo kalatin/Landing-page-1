@@ -13,3 +13,43 @@
 	justify-content: center;
 	align-items: center;
 }
+
+//anims
+%anim-off {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+%anim-from-left {
+	transform: translate(-50%, 0);
+	transition-property: transform, opacity;
+	transition-duration: 0.8s;
+	opacity: 0;
+}
+
+%anim-from-right {
+	transform: translate(50%, 0);
+	transition-property: transform, opacity;
+	transition-duration: 0.8s;
+	opacity: 0;
+}
+
+%anim-from-top {
+	transform: translate(0, -50%);
+	transition-property: transform, opacity;
+	transition-duration: 0.8s;
+	opacity: 0;
+}
+
+%anim-from-bottom {
+	transform: translate(0, 50%);
+	transition-property: transform, opacity;
+	transition-duration: 0.8s;
+	opacity: 0;
+}
+
+%anim-transparency {
+	transition-property: opacity;
+	transition-duration: 0.8s;
+	opacity: 0;
+}
